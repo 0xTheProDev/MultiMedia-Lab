@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MIPS Simulator</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            padding: 0 20px;
+        }
+        header {
+            color: #09c;
+            padding-top: 30px;
+        }
+        section {
+            font-size: 1.2em;
+            padding: 20px 30px;
+        }
+        section > h3 {
+            padding: 20px 0;
+        }
+        section > h5 {
+            padding: 15px 0;
+        }
+        section > ol, section > ul {
+            margin-left: 40px;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        pre {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+        }
+        footer {
+            width: 100%;
+            text-align: end;
+        }
+    </style>
+    <header>
+        <h1>MIPS Simulator</h1>
+    </header>
+    <section id='table'>
+        <h3>Table of Content</h3>
+        <ol type='1'>
+            <li><a href='#intro'>Introduction</a></li>
+            <li><a href='#prereq'>Pre-requisites</a></li>
+            <li><a href='#install'>Installation</a></li>
+            <li><a href='#usage'>Usage</a></li>
+            <li><a href='#contrib'>Contributing</a></li>
+            <li><a href='#license'>License</a></li>
+        </ol>
+    </section>
+    <section id='intro'>
+        <h3>Introduction</h3>
+        <p>
+            &emsp;MIPS Simulator is a Free and Open Source Software that helps you execute your
+            MIPS assembly instructions right from your terminal in Desktop PC. This is a cross-platform
+            application, meaning runnable from all devices. The current version of the software supports
+            instructions upto MIPS-IV standard enabling a virtual machine with Load-Store architecture.
+        </p>
+    </section>
+    <section id='prereq'>
+        <h3>Pre-requisites</h3>
+        <ul>
+            <li>A working PC with with at least Pentium Core Processor</li>
+            <li>Minimum of 256 Mb Physical Memory</li>
+            <li>Any Operating System with Command Line Interface</li>
+            <li>A Node Runtime Environment</li>
+        </ul>
+    </section>
+    <section id='install'>
+        <h3>How to Install</h3>
+        <h5>Installing Proper Node Environment</h5>
+        <span>MIPS Simulator is supported on both 6 LTS version and current 8+ version.</span>
+        <ol type='1'>
+            <li>Visit nodejs.org and select Download option from the menu</li>
+            <li>Choose your appropriate platform and download either of the above mentioned.</li>
+            <li>Once downloaded, open the installer (on Windows) or execute (on MacOS or Linux) and follow.</li>
+            <li>Once installation is complete, open command line and type <pre>$ npm -v</pre>
+                to ensure that installation is a success.</li>
+        </ol>
+        <span><i>Note: We strongly encourage you to use powershell or install any bash alternatives on Windows.</i></span>
+        <h5>Installing The Application</h5>
+        <p>
+            Open your terminal and execute the following: <pre>$ npm i -g mips-simulator</pre>
+        </p>
+    </section>
+    <section id='usage'>
+        <h3>How to Use</h3>
+        <p>
+            The application was developed with simplicity in mind. So to run an assembly program,
+            you just need to do the following: <pre>$ mipc &lt;assembly_source_file&gt;</pre>
+        </p>
+    </section>
+    <section id='contrib'>
+        <h3>Contributing for Developers</h3>
+        <p>
+            If you want to contribute to the project, you will be required to have a GitHub id and
+            Git installed in your system. Then clone the source repository by:
+            <pre>$ git clone https://github.com/BytesClub/MIPS-Simulator</pre>
+            Test the current state of the application by <pre>$ npm test</pre>
+            Create a new branch and start making changes. Create a pull request with your changes. Use
+            continious testing and linting to make sure your code does not break anything.
+        </p>
+    </section>
+    <section id='license'>
+        <h3>License</h3>
+        <span>The project is licensed under GNU Genral Public License version 3</span>
+    </section>
+    <footer>
+        <i>For more details: Visit official documentation site of 
+            <a href='https://bytesclub.github.io/MIPS-Simulator/'>MIPS-Simulator</a>
+        </i>
+    </footer>
+</body>
+</html>
