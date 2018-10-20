@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            margin-top: 60px;
+            margin-left: 30%;
+            padding: 20px;
+            width: 40%;
+            border-radius: 10px;
+            border: 1px solid #999;
+            box-shadow: 1px 2px 0 0 #aaa;
+        }
+        main h2 {
+            padding: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+        main input, main textarea {
+            width: 100%;
+            padding: 20px 10px;
+            padding-right: 0;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+        main button {
+            background-color: #0a9;
+            padding: 15px;
+            color: #fff;
+            font-size: 1.2em;
+            border-radius: 15px;
+        }
+    </style>
+    <main>
+        <h2>User Registration Form</h2>
+        <form name='user_form' method='GET'>
+            <input type='text' name='name' placeholder='Full Name' />
+            <input type='text' name='user_name' placeholder='User Name' />
+            <input type='password' name='password' placeholder='Password' />
+            <textarea name='comment' placeholder='Enter Some Comment'></textarea>
+            <button>Submit</button>
+        </form>
+    </main>
+</body>
+</html>
