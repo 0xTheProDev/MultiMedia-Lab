@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Railway Reservation</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            padding-bottom: 20px;
+        }
+        h2 {
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+        }
+        aside, section {
+            margin-top: 30px;
+            margin-left: 10%;
+            padding: 20px;
+            width: 80%;
+            border-radius: 10px;
+            border: 1px solid #999;
+            box-shadow: 1px 2px 0 0 #aaa;
+        }
+        input {
+            padding: 20px 10px;
+            padding-right: 0;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        button {
+            background-color: #0a9;
+            padding: 15px;
+            color: #fff;
+            font-size: 1.2em;
+            border-radius: 15px;
+        }
+        .search input {
+            width: 20%;
+        }
+        .result table {
+            margin-top: 5px;
+            width: 100%;
+            text-align: center !important;
+        }
+        .result thead tr {
+            background-color: #333;
+            color: #fff;
+        }
+        .result th {
+            padding: 5px 0;
+        }
+        .result tbody tr:nth-child(2n) {
+            background-color: #ccc;
+        }
+        .result td {
+            padding: 3px 0;
+        }
+        .reservation input[type=text], .reservation input[type=tel] {
+            width: 95%;
+        }
+        .reservation button {
+            float: right;
+            margin-right: 30px;
+        }
+    </style>
+    <aside class="search">
+        <span class="j_search">Search Trains:</span>
+        <form name="train_search">
+            <input type="text" name="train_no" placeholder="Enter Train No" />
+            <input type="text" name="source" placeholder="Enter Source Station" required/>
+            <input type="text" name="dest" placeholder="Enter Destination Station" required/>
+            <input type="date" name="date" placeholder="Enter Journey Date" required/>
+            <button type="submit" name="search" title="Search">&gt;</button>
+        </form>
+    </aside>
+    <section class="result">
+        <h2>Search Results</h2>
+        <span class="j_date">Date of Journey: 18-Oct-2019</span>
+        <table class="search_result">
+            <thead>
+                <tr>
+                    <th>Train No</th>
+                    <th>Source ETA/ETD</th>
+                    <th>Destination ETA/ETD</th>
+                    <th>Average Delay</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>300124</td>
+                    <td>12:00<br/>12:01</td>
+                    <td>12:25<br/>12:30</td>
+                    <td>RT</td>
+                </tr>
+                <tr>
+                    <td>300128</td>
+                    <td>12:09<br/>12:10</td>
+                    <td>12:40<br/>12:45</td>
+                    <td>00:05</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="reservation">
+        <h2>Reservation Form</h2>
+        <form name="reservation_form">
+            <input type="text" name="name" placeholder="Passenger Name" required/>
+            <input type="tel" name="phone" placeholder="Contact Number" required/>
+            <input type="number" name="train" placeholder="Train No" required/>
+            <input type="number" name="age" min="3" placeholder="Passenger Age" required/>
+            <input type="number" name="copass" min="1" placeholder="No of Co-Passenger" required/>
+            <input type="checkbox" name="check" id="tc" required/>
+            <label for="tc">I Agree to Terms of Usage and Privacy Policy</label>
+            <button type="submit" name="order">Place Order</button>
+        </form>
+    </section>
+</body>
+</html>
